@@ -19,9 +19,7 @@ export default function Story() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.querySelectorAll(".fade-in").forEach((node) =>
-            node.classList.add("visible")
-          );
+          el.querySelectorAll(".fade-in").forEach((node) => node.classList.add("visible"));
         }
       },
       { threshold: 0.15 }
@@ -53,26 +51,29 @@ export default function Story() {
           <div className="story-content">
             <span className="section-label fade-in">Hikayemiz</span>
             <h2 id="story-heading" className="fade-in fade-in-delay-1">
-              Ünye&apos;nin<br />
+              Ünye&apos;nin
+              <br />
               <em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>Ateşli</em> Kahvesi
             </h2>
             <div className="divider fade-in fade-in-delay-2" />
             <p className="fade-in fade-in-delay-2">
-              Karadeniz&apos;in incisi Ünye&apos;de, Devlet Sahil Yolu üzerinde konumlanan Kahve Ateşi;
-              kahve tutkunlarının buluşma noktasıdır. Her fincan, titizlikle seçilmiş çekirdeklerin
-              ustalıkla demlenmesiyle hayat bulur.
+              Karadeniz&apos;in incisi Ünye&apos;de, Devlet Sahil Yolu üzerinde konumlanan Kahve
+              Ateşi; kahve tutkunlarının buluşma noktasıdır. Her fincan, titizlikle seçilmiş
+              çekirdeklerin ustalıkla demlenmesiyle hayat bulur.
             </p>
             <p className="fade-in fade-in-delay-3">
               Misafirlerimize sunduğumuz her içecek, bir ritüeldir. Espresso&apos;nun yoğun
-              karakterinden, filtre kahvenin narin aromasına; Türk kahvesinin derinliğinden
-              cold brew&apos;un serinliğine — her damak zevkine hitap eden bir dünya
-              sizi Ünye&apos;de bekliyor.
+              karakterinden, filtre kahvenin narin aromasına; Türk kahvesinin derinliğinden cold
+              brew&apos;un serinliğine — her damak zevkine hitap eden bir dünya sizi Ünye&apos;de
+              bekliyor.
             </p>
 
             <div className="story-features fade-in fade-in-delay-4">
               {features.map((f, i) => (
                 <div key={i} className="story-feature">
-                  <div className="story-feature-icon" aria-hidden="true">{f.icon}</div>
+                  <div className="story-feature-icon" aria-hidden="true">
+                    {f.icon}
+                  </div>
                   <span>{f.text}</span>
                 </div>
               ))}

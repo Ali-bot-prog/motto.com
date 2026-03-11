@@ -23,9 +23,7 @@ export default function Gallery() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.querySelectorAll(".fade-in").forEach((node) =>
-            node.classList.add("visible")
-          );
+          el.querySelectorAll(".fade-in").forEach((node) => node.classList.add("visible"));
         }
       },
       { threshold: 0.08 }
@@ -44,12 +42,7 @@ export default function Gallery() {
 
   return (
     <>
-      <section
-        className="gallery-section"
-        id="galeri"
-        ref={ref}
-        aria-labelledby="gallery-heading"
-      >
+      <section className="gallery-section" id="galeri" ref={ref} aria-labelledby="gallery-heading">
         <div className="container">
           <div className="gallery-header">
             <span className="section-label fade-in">Galeri</span>
@@ -85,7 +78,9 @@ export default function Gallery() {
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
                 <div className="gallery-item-overlay">
-                  <span className="gallery-icon" aria-hidden="true">⊕</span>
+                  <span className="gallery-icon" aria-hidden="true">
+                    ⊕
+                  </span>
                 </div>
               </div>
             ))}
@@ -101,11 +96,7 @@ export default function Gallery() {
         aria-label="Fotoğraf önizleme"
         onClick={() => setLightboxSrc(null)}
       >
-        <button
-          className="lightbox-close"
-          onClick={() => setLightboxSrc(null)}
-          aria-label="Kapat"
-        >
+        <button className="lightbox-close" onClick={() => setLightboxSrc(null)} aria-label="Kapat">
           ×
         </button>
         {lightboxSrc && (

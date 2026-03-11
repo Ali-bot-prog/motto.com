@@ -50,9 +50,7 @@ export default function Menu() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.querySelectorAll(".fade-in").forEach((node) =>
-            node.classList.add("visible")
-          );
+          el.querySelectorAll(".fade-in").forEach((node) => node.classList.add("visible"));
         }
       },
       { threshold: 0.08 }
@@ -62,12 +60,7 @@ export default function Menu() {
   }, []);
 
   return (
-    <section
-      className="menu-section"
-      id="kahvelerimiz"
-      ref={ref}
-      aria-labelledby="menu-heading"
-    >
+    <section className="menu-section" id="kahvelerimiz" ref={ref} aria-labelledby="menu-heading">
       <div className="container">
         <div className="menu-header">
           <span className="section-label fade-in">Menümüz</span>
@@ -76,8 +69,8 @@ export default function Menu() {
           </h2>
           <div className="divider fade-in fade-in-delay-2" />
           <p className="fade-in fade-in-delay-2">
-            Her fincan ayrı bir yolculuk. Özenle seçilmiş çekirdekler,
-            uzman eller ve sevgiyle sunulur.
+            Her fincan ayrı bir yolculuk. Özenle seçilmiş çekirdekler, uzman eller ve sevgiyle
+            sunulur.
           </p>
         </div>
 

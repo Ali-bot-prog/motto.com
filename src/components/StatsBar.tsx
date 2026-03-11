@@ -18,9 +18,7 @@ export default function StatsBar() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.querySelectorAll(".fade-in").forEach((node) =>
-            node.classList.add("visible")
-          );
+          el.querySelectorAll(".fade-in").forEach((node) => node.classList.add("visible"));
         }
       },
       { threshold: 0.2 }
@@ -34,10 +32,7 @@ export default function StatsBar() {
       <div className="container">
         <div className="stats-inner">
           {stats.map((s, i) => (
-            <div
-              key={i}
-              className={`stat-item fade-in fade-in-delay-${i + 1}`}
-            >
+            <div key={i} className={`stat-item fade-in fade-in-delay-${i + 1}`}>
               <div className="stat-number">{s.number}</div>
               <div className="stat-label">{s.label}</div>
             </div>

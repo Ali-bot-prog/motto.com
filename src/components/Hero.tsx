@@ -38,16 +38,14 @@ export default function Hero() {
       {/* Content */}
       <div className="container">
         <div className="hero-content" ref={contentRef}>
-          <span className="hero-eyebrow">
-            Ünye · Ordu · Türkiye
-          </span>
+          <span className="hero-eyebrow">Ünye · Ordu · Türkiye</span>
           <h1>
-            Ateşin Kokusu,<br />
+            Ateşin Kokusu,
+            <br />
             <em>Kahvenin Ruhu</em>
           </h1>
           <p className="hero-sub">
-            Sahil Yolu&apos;nun kalbinde, her yudumda hissedilen
-            tutku ve zanaatın buluştuğu yer.
+            Sahil Yolu&apos;nun kalbinde, her yudumda hissedilen tutku ve zanaatın buluştuğu yer.
           </p>
           <div className="hero-actions">
             <a href="#kahvelerimiz" className="btn btn-primary">

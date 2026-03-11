@@ -28,17 +28,21 @@ export default function Navbar() {
             </Link>
 
             <ul className="navbar-nav">
-              <li><a href="#hikayemiz">Hikayemiz</a></li>
-              <li><a href="#kahvelerimiz">Kahvelerimiz</a></li>
-              <li><a href="#galeri">Galeri</a></li>
-              <li><a href="#iletisim">İletişim</a></li>
+              <li>
+                <a href="#hikayemiz">Hikayemiz</a>
+              </li>
+              <li>
+                <a href="#kahvelerimiz">Kahvelerimiz</a>
+              </li>
+              <li>
+                <a href="#galeri">Galeri</a>
+              </li>
+              <li>
+                <a href="#iletisim">İletişim</a>
+              </li>
             </ul>
 
-            <a
-              href="#iletisim"
-              className="btn btn-primary navbar-cta"
-              aria-label="Bizi ziyaret et"
-            >
+            <a href="#iletisim" className="btn btn-primary navbar-cta" aria-label="Bizi ziyaret et">
               Bizi Ziyaret Et
             </a>
 
@@ -63,10 +67,18 @@ export default function Navbar() {
         aria-modal="true"
         aria-label="Navigasyon menüsü"
       >
-        <a href="#hikayemiz" onClick={handleNavClick}>Hikayemiz</a>
-        <a href="#kahvelerimiz" onClick={handleNavClick}>Kahvelerimiz</a>
-        <a href="#galeri" onClick={handleNavClick}>Galeri</a>
-        <a href="#iletisim" onClick={handleNavClick}>İletişim</a>
+        <a href="#hikayemiz" onClick={handleNavClick}>
+          Hikayemiz
+        </a>
+        <a href="#kahvelerimiz" onClick={handleNavClick}>
+          Kahvelerimiz
+        </a>
+        <a href="#galeri" onClick={handleNavClick}>
+          Galeri
+        </a>
+        <a href="#iletisim" onClick={handleNavClick}>
+          İletişim
+        </a>
         <a href="#iletisim" className="btn btn-primary" onClick={handleNavClick}>
           Bizi Ziyaret Et
         </a>

@@ -18,8 +18,7 @@ export const BRAND = {
     postalCode: "52300",
     country: "TR",
     full: "Çamurlu, Devlet Sahil Yolu No:32, 52300 Ünye / Ordu",
-    mapsUrl:
-      "https://maps.google.com/?q=Çamurlu+Devlet+Sahil+Yolu+No:32+Ünye+Ordu",
+    mapsUrl: "https://maps.google.com/?q=Çamurlu+Devlet+Sahil+Yolu+No:32+Ünye+Ordu",
   },
   geo: {
     latitude: 41.1337,
